@@ -272,6 +272,10 @@ int   read_mode=0;                               /* if 1 read data immediatelly,
 int   step_mode=0;                               /* if 1 read step data and write the single parts from an assembly to the filesystem */
 int   centerNode=0;                    /* Nr of center Node, 0:no centernode */
 
+// Colormap name
+// Possible values: "classic", "viridis", "turbo", "inferno"
+char  cmap_name[] = "classic";
+
 char  inpformat=0;                     /* defines the start-up mode of cgx */
 char  allowSysFlag=ALLOW_SYS_FLAG;                  /* 1: allow the execution of system calls (sys command) */
 char  autoDivFlag=1;                   /* The div command will set it to 0 and no auto-div is executed */
@@ -284,7 +288,7 @@ char  frameFlag={1};                   /* mit (1) oder ohne Rahmen um das Grafik
 char  captionFlag={1};                 /* mit (1) oder ohne filename im Menufenster */
 char  textFlag={1};                    /* mit (1) oder ohne text im Menufenster */
 char  commandLineFlag={0};             /* mit (1) oder ohne Kommandozeile im Menufenster */
-char  printFlag=0;                     /* printf on/off on=1 (kommando 'msg' 'on'|'off' )*/
+char  printFlag=1;                     /* printf on/off on=1 (kommando 'msg' 'on'|'off' )*/
 char  scalaFlag={1};                   /* mit (1) oder ohne scala und wertetexte */ 
 char  sequenceFlag=0;                  /* 1: play a sequence of LC */
 char  vectorFlag=0;                    /* 0: scalar plot, 1: vector plot */

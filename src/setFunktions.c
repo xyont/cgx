@@ -44,6 +44,7 @@ Peter Heppel Jan 2016
 #define MAX_NR_OF_TETS_PER_ELEM 44
 #define N_CLOSEST_TETS 200
 
+extern char cmap_name[]; // possible values: "classic", "viridis", "turbo", "inferno"
 extern int   col_maxc,col_minc;  /* colors of the regions with clipped colors (commands maxc,minc) */
 extern int   defScalMethod;         /* method to display the scale */
 extern int   entitycols;
@@ -15194,6 +15195,27 @@ int commandoInterpreter( char *type, char *string, int na, int nb, FILE *handle1
       wx[1]=wy[1]=dx;
     }
     zoom(wx[0], wy[0], wx[1], wy[1]);
+  }
+  else if (compareStrings(type, "CMAP")>0)
+  {
+    char new_cmap_name[] = "";
+    sscanf(string, "%s %s", type, new_cmap_name);
+
+    char *cmap_names[] = {"classic", "viridis", "turbo", "inferno"};
+    Bool cmap_found = False;
+    for (int i=0; i<4; i++)
+      if (strcmp(cmap_names[i], new_cmap_name) == 0)
+        cmap_found = True;
+
+    if (cmap_found)
+    {
+      strcpy(cmap_name, new_cmap_name);
+      printf("\nSetting \'%s\' colormap.\n\n", new_cmap_name);
+      defineColTextur_load(1.);
+      redraw();
+    }
+    else
+      printf("\nColormap \'%s\' not defined.\n\n", new_cmap_name);
   }
   else if ((type[0]== '!')||(type[0]== '#')||(type[0]== '$'))
   {
