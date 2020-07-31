@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2017.2 (Released Jan 23, 2017) -->
+<HTML>
+<HEAD>
+<TITLE>del</TITLE>
+<META NAME="description" CONTENT="del">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2017.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node81.html">
+<LINK REL="previous" HREF="node79.html">
+<LINK REL="up" HREF="node64.html">
+<LINK REL="next" HREF="node81.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1696"
+  HREF="node81.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1692"
+  HREF="node64.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1686"
+  HREF="node79.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1694"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1697"
+  HREF="node81.html">dist</A>
+<B> Up:</B> <A NAME="tex2html1693"
+  HREF="node64.html">Commands</A>
+<B> Previous:</B> <A NAME="tex2html1687"
+  HREF="node79.html">cut</A>
+ &nbsp; <B>  <A NAME="tex2html1695"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001016000000000000000"></A><A NAME="del"></A>
+<BR>
+del
+</H2>
+<PRE>
+   'del' ['p'|'l'|'l0'|'c'|'s'|'b'|'t'|'S'|'L'|'se'|'sh' &lt;entity&gt;]|
+         ['se0']|
+         ['mesh']|
+         ['pic']
+</PRE>
+This keyword is used to delete entities, the whole mesh (see also <A HREF="node151.html#qdel">qdel</A>) or a background-picture. For example,
+<BR>
+<BR>
+del se part
+<BR>
+<BR>
+will delete the set &ldquo;part&rdquo; but all included entities are untouched. The following entities are known:
+<BR>
+<BR>
+Points p, Lines l, Combined Lines c, Surfaces s, Bodies b, Node Texts t, Nurb Surfaces S, Nurb Lines L, Sets se and Shapes sh.
+<BR>
+<BR>
+When an entity is deleted, all dependent higher entities are deleted as well. Special cases are
+<BR>
+<BR>
+del l0 set  (l&lt;zero&gt;)
+<BR>
+<BR>
+were all lines with zero length in set &rdquo;set&rdquo; are deleted and
+<BR>
+<BR>
+del se0
+<BR>
+<BR>
+will delete all empty sets.
+If a background-picture was loaded with the &rdquo;<A HREF="node170.html#read">read</A>&rdquo; command it can be deleted with:
+<BR>
+<BR>
+del pic
+
+<BR>
+<BR>
+See also &rdquo;<A HREF="node207.html#zap">zap</A>&rdquo; on how to delete a set with all its referenced entities.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

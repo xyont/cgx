@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2017.2 (Released Jan 23, 2017) -->
+<HTML>
+<HEAD>
+<TITLE>txt</TITLE>
+<META NAME="description" CONTENT="txt">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2017.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node198.html">
+<LINK REL="previous" HREF="node196.html">
+<LINK REL="up" HREF="node64.html">
+<LINK REL="next" HREF="node198.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3100"
+  HREF="node198.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html3096"
+  HREF="node64.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html3090"
+  HREF="node196.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html3098"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3101"
+  HREF="node198.html">ucut</A>
+<B> Up:</B> <A NAME="tex2html3097"
+  HREF="node64.html">Commands</A>
+<B> Previous:</B> <A NAME="tex2html3091"
+  HREF="node196.html">trfm</A>
+ &nbsp; <B>  <A NAME="tex2html3099"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00010133000000000000000"></A><A NAME="txt"></A>
+<BR>
+txt
+</H2>
+<PRE>
+  'txt' &lt;set&gt;|&lt;node&gt; ['n'|&amp;'v'|&amp;'e'|&amp;'t'|&amp;'f'|&amp;'i'|&amp;'s'] -&gt;
+        [&lt;x&gt; &lt;y&gt;] [&lt;"text"&gt;]
+</PRE>
+Creates node-attached texts (showing node-number, value and eventually an user defined text, see figure
+<A HREF="node168.html#qtxtp">8</A>) in the drawing area. The optional dx,dy values define an offset (normalized coordinates) to the actual node position on the screen where the origin is in the lower left corner:
+<BR>
+<BR>
+txt nodset 0.1 0.2
+<BR>
+<BR>
+The texts are attached to the related nodes if no offset is specified;
+<BR>
+<BR>
+txt nodset
+<BR>
+<BR>
+or to a single node:
+<BR>
+<BR>
+txt nodenr
+<BR>
+<BR>
+The texts comprise of a node-nr and the value and an user defined text. The user defined text must be given in quotation marks:
+<BR>
+<BR>
+txt nodenr &ldquo;hello wold&rdquo;
+<BR>
+<BR>
+The node-nr can be deselected by providing the key 'n', the value can be deselected with key 'v' and the text with key 't'. The exponential format of the value can be selected with 'e', float with 'f' and integer with 'i':
+<BR>
+<BR>
+txt nodset fn
+<BR>
+<BR>
+deselects the node-nr and selects the float format for the value.
+<BR>
+<BR>
+txt nodset n 0.1 0.5
+<BR>
+<BR>
+deselects the node-nr and places the value at a certain position. Per default the user defined text is placed at the trailing position. The key 's' shifts it to the front.
+The texts are generated but not displayed. The commands &rdquo;<A HREF="node140.html#plot">plot</A>&rdquo; and &rdquo;<A HREF="node141.html#plus">plus</A>&rdquo; can be used for that purpose. The texts can be deleted with &rdquo;<A HREF="node80.html#del">del</A>&rdquo;. See also &rdquo;<A HREF="node168.html#qtxt">qtxt</A>&rdquo; for the interactive command.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html3100"
+  HREF="node198.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html3096"
+  HREF="node64.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html3090"
+  HREF="node196.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html3098"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3101"
+  HREF="node198.html">ucut</A>
+<B> Up:</B> <A NAME="tex2html3097"
+  HREF="node64.html">Commands</A>
+<B> Previous:</B> <A NAME="tex2html3091"
+  HREF="node196.html">trfm</A>
+ &nbsp; <B>  <A NAME="tex2html3099"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2017.2 (Released Jan 23, 2017) -->
+<HTML>
+<HEAD>
+<TITLE>Remarks Concerning Nastran</TITLE>
+<META NAME="description" CONTENT="Remarks Concerning Nastran">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2017.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node253.html">
+<LINK REL="previous" HREF="node251.html">
+<LINK REL="up" HREF="node230.html">
+<LINK REL="next" HREF="node253.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3792"
+  HREF="node253.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html3788"
+  HREF="node230.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html3782"
+  HREF="node251.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html3790"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3793"
+  HREF="node253.html">Remarks Concerning NETGEN</A>
+<B> Up:</B> <A NAME="tex2html3789"
+  HREF="node230.html">Tips and Hints</A>
+<B> Previous:</B> <A NAME="tex2html3783"
+  HREF="node251.html">Remarks Concerning Duns and</A>
+ &nbsp; <B>  <A NAME="tex2html3791"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001722000000000000000"></A><A NAME="Remarks_Concerning_Nastran"></A>
+<BR>
+Remarks Concerning Nastran
+</H2>
+The cgx is capable to write the following mesh entities to files (see &ldquo;<A HREF="node176.html#send">send</A>&rdquo;, the necessary key-parameters are listed in brackets below):
+
+<UL>
+<LI>Nodes and Elements 
+</LI>
+<LI>node displacement coordinate system (see command &ldquo;<A HREF="node78.html#csysa">csysa</A>&rdquo;)
+</LI>
+<LI>Single point constraints (spc)
+</LI>
+<LI>Equations or RBEs (areampc, to glue components. A previous command &ldquo;<A HREF="node67.html#asgn">asgn</A>&rdquo; defines if mpcs or rbes will be created)
+</LI>
+<LI>RBE2 ( mpc, for rbe-spiders)
+</LI>
+<LI>Pressure (pres, so far only CHEXA8)
+</LI>
+<LI>Temperatures (ds, all datasets with just one entity will be written as temperatures)
+</LI>
+</UL>
+The resulting files have to be combined with the help of an editor and extended by material-data and the necessary controll-commands. 
+
+<P>
+The f06-file with results can be read (so far only CHEXA with displacements and stresses).
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

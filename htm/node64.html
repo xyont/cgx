@@ -1,0 +1,407 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2017.2 (Released Jan 23, 2017) -->
+<HTML>
+<HEAD>
+<TITLE>Commands</TITLE>
+<META NAME="description" CONTENT="Commands">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2017.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node209.html">
+<LINK REL="previous" HREF="node63.html">
+<LINK REL="up" HREF="cgx.html">
+<LINK REL="next" HREF="node65.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1360"
+  HREF="node65.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1356"
+  HREF="cgx.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1350"
+  HREF="node63.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1358"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1361"
+  HREF="node65.html">anim</A>
+<B> Up:</B> <A NAME="tex2html1357"
+  HREF="cgx.html">CalculiX USER'S MANUAL -</A>
+<B> Previous:</B> <A NAME="tex2html1351"
+  HREF="node63.html">Customization</A>
+ &nbsp; <B>  <A NAME="tex2html1359"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION000100000000000000000"></A><A NAME="Commands"></A>
+<BR>
+Commands
+</H1>
+This section is a reference to all commands and their parameters in alphabetic order. If a command is typed the mouse-pointer must be in the main window (figure <A HREF="node8.html#mainwindow">2</A>). Only the echo of the input stream is visible in the parent konsole. The keywords are not case sensitive but all command parameters are case sensitive. Each reference starts with a short description of the command. The following syntax is used for these descriptions:
+<PRE>
+Known commands and syntax:
+ '..':   Keyword (either uppercase or lowercase)
+ &lt;..&gt;:   Parameter (case-sensitive)
+ [..]:   combination of parameters or optional parameter
+ (..):   Remark
+ |   :   OR
+ &amp;   :   AND
+ -   :   from-to
+ -&gt;  :   command continues in the next line
+ RETURN  press the RETURN key
+</PRE>
+Entities--with the exception of nodes and elements--are referenced by names which can contain letters and numbers. Usually one to four characters is recommended. If a new entity uses an existing name, the old definition will be overwritten. To overcome this problem, &rdquo;alias&rdquo; names can be used. An alias name is defined with the <code>!</code> sign in front. An already defined alias name can be referenced by placing the <code>%</code> sign in front. For example:
+<BR>
+<BR>
+LINE <code>!</code>L1 <code>%</code>P1 <code>%</code>P2 <code>%</code>SET
+<BR>
+<BR>
+will create a line with the alias name L1 and will use the alias names P1 and P2 to define the end-points and uses the set SET to define the point sequence between the end-points. The assigned alias name for a given entity can be enquired with a leading question mark using the prnt command.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL CLASS="ChildLinks">
+<LI><A NAME="tex2html1362"
+  HREF="node65.html">anim</A>
+<LI><A NAME="tex2html1363"
+  HREF="node66.html">area</A>
+<LI><A NAME="tex2html1364"
+  HREF="node67.html">asgn</A>
+<LI><A NAME="tex2html1365"
+  HREF="node68.html">bia</A>
+<LI><A NAME="tex2html1366"
+  HREF="node69.html">body</A>
+<LI><A NAME="tex2html1367"
+  HREF="node70.html">break</A>
+<LI><A NAME="tex2html1368"
+  HREF="node71.html">call</A>
+<LI><A NAME="tex2html1369"
+  HREF="node72.html">capt</A>
+<LI><A NAME="tex2html1370"
+  HREF="node73.html">cntr</A>
+<LI><A NAME="tex2html1371"
+  HREF="node74.html">col</A>
+<LI><A NAME="tex2html1372"
+  HREF="node75.html">comp</A>
+<LI><A NAME="tex2html1373"
+  HREF="node76.html">copy</A>
+<LI><A NAME="tex2html1374"
+  HREF="node77.html">corrad</A>
+<LI><A NAME="tex2html1375"
+  HREF="node78.html">csysa</A>
+<LI><A NAME="tex2html1376"
+  HREF="node79.html">cut</A>
+<LI><A NAME="tex2html1377"
+  HREF="node80.html">del</A>
+<LI><A NAME="tex2html1378"
+  HREF="node81.html">dist</A>
+<LI><A NAME="tex2html1379"
+  HREF="node82.html">div</A>
+<LI><A NAME="tex2html1380"
+  HREF="node83.html">ds</A>
+<LI><A NAME="tex2html1381"
+  HREF="node84.html">elem</A>
+<LI><A NAME="tex2html1382"
+  HREF="node85.html">else</A>
+<LI><A NAME="tex2html1383"
+  HREF="node86.html">else if</A>
+<LI><A NAME="tex2html1384"
+  HREF="node87.html">elty</A>
+<LI><A NAME="tex2html1385"
+  HREF="node88.html">endif</A>
+<LI><A NAME="tex2html1386"
+  HREF="node89.html">endwhile</A>
+<LI><A NAME="tex2html1387"
+  HREF="node90.html">enq</A>
+<LI><A NAME="tex2html1388"
+  HREF="node91.html">eprop</A>
+<LI><A NAME="tex2html1389"
+  HREF="node92.html">eqal</A>
+<LI><A NAME="tex2html1390"
+  HREF="node93.html">exit</A>
+<LI><A NAME="tex2html1391"
+  HREF="node94.html">fil</A>
+<LI><A NAME="tex2html1392"
+  HREF="node95.html">flip</A>
+<LI><A NAME="tex2html1393"
+  HREF="node96.html">flpc</A>
+<LI><A NAME="tex2html1394"
+  HREF="node97.html">font</A>
+<LI><A NAME="tex2html1395"
+  HREF="node98.html">frame</A>
+<LI><A NAME="tex2html1396"
+  HREF="node99.html">gbod</A>
+<LI><A NAME="tex2html1397"
+  HREF="node100.html">gonly</A>
+<LI><A NAME="tex2html1398"
+  HREF="node101.html">graph</A>
+<LI><A NAME="tex2html1399"
+  HREF="node102.html">grpa</A>
+<LI><A NAME="tex2html1400"
+  HREF="node103.html">grps</A>
+<LI><A NAME="tex2html1401"
+  HREF="node104.html">gsur</A>
+<LI><A NAME="tex2html1402"
+  HREF="node105.html">gtol</A>
+<LI><A NAME="tex2html1403"
+  HREF="node106.html">hcpy</A>
+<LI><A NAME="tex2html1404"
+  HREF="node107.html">help</A>
+<LI><A NAME="tex2html1405"
+  HREF="node108.html">if</A>
+<LI><A NAME="tex2html1406"
+  HREF="node109.html">int</A>
+<LI><A NAME="tex2html1407"
+  HREF="node110.html">init</A>
+<LI><A NAME="tex2html1408"
+  HREF="node111.html">lcmb</A>
+<LI><A NAME="tex2html1409"
+  HREF="node112.html">length</A>
+<LI><A NAME="tex2html1410"
+  HREF="node113.html">line</A>
+<LI><A NAME="tex2html1411"
+  HREF="node114.html">lnor</A>
+<LI><A NAME="tex2html1412"
+  HREF="node115.html">mata</A>
+<LI><A NAME="tex2html1413"
+  HREF="node116.html">map</A>
+<LI><A NAME="tex2html1414"
+  HREF="node117.html">mats</A>
+<LI><A NAME="tex2html1415"
+  HREF="node118.html">max</A>
+<LI><A NAME="tex2html1416"
+  HREF="node119.html">maxc</A>
+<LI><A NAME="tex2html1417"
+  HREF="node120.html">maxr</A>
+<LI><A NAME="tex2html1418"
+  HREF="node121.html">menu</A>
+<LI><A NAME="tex2html1419"
+  HREF="node122.html">merg</A>
+<LI><A NAME="tex2html1420"
+  HREF="node123.html">mesh</A>
+<LI><A NAME="tex2html1421"
+  HREF="node124.html">mids</A>
+<LI><A NAME="tex2html1422"
+  HREF="node125.html">min</A>
+<LI><A NAME="tex2html1423"
+  HREF="node126.html">minc</A>
+<LI><A NAME="tex2html1424"
+  HREF="node127.html">minr</A>
+<LI><A NAME="tex2html1425"
+  HREF="node128.html">minus</A>
+<LI><A NAME="tex2html1426"
+  HREF="node129.html">mm</A>
+<LI><A NAME="tex2html1427"
+  HREF="node130.html">move</A>
+<LI><A NAME="tex2html1428"
+  HREF="node131.html">movi</A>
+<LI><A NAME="tex2html1429"
+  HREF="node132.html">msg</A>
+<LI><A NAME="tex2html1430"
+  HREF="node133.html">mshp</A>
+<LI><A NAME="tex2html1431"
+  HREF="node134.html">neigh</A>
+<LI><A NAME="tex2html1432"
+  HREF="node135.html">node</A>
+<LI><A NAME="tex2html1433"
+  HREF="node136.html">norm</A>
+<LI><A NAME="tex2html1434"
+  HREF="node137.html">nurl</A>
+<LI><A NAME="tex2html1435"
+  HREF="node138.html">nurs</A>
+<LI><A NAME="tex2html1436"
+  HREF="node139.html">ori</A>
+<LI><A NAME="tex2html1437"
+  HREF="node140.html">plot</A>
+<LI><A NAME="tex2html1438"
+  HREF="node141.html">plus</A>
+<LI><A NAME="tex2html1439"
+  HREF="node142.html">pnt</A>
+<LI><A NAME="tex2html1440"
+  HREF="node143.html">prnt</A>
+<LI><A NAME="tex2html1441"
+  HREF="node144.html">proj</A>
+<LI><A NAME="tex2html1442"
+  HREF="node145.html">qadd</A>
+<LI><A NAME="tex2html1443"
+  HREF="node146.html">qali</A>
+<LI><A NAME="tex2html1444"
+  HREF="node147.html">qbia</A>
+<LI><A NAME="tex2html1445"
+  HREF="node148.html">qbod</A>
+<LI><A NAME="tex2html1446"
+  HREF="node149.html">qcnt</A>
+<LI><A NAME="tex2html1447"
+  HREF="node150.html">qcut</A>
+<LI><A NAME="tex2html1448"
+  HREF="node151.html">qdel</A>
+<LI><A NAME="tex2html1449"
+  HREF="node152.html">qdis</A>
+<LI><A NAME="tex2html1450"
+  HREF="node153.html">qdiv</A>
+<LI><A NAME="tex2html1451"
+  HREF="node154.html">qenq</A>
+<LI><A NAME="tex2html1452"
+  HREF="node155.html">qfil</A>
+<LI><A NAME="tex2html1453"
+  HREF="node156.html">qflp</A>
+<LI><A NAME="tex2html1454"
+  HREF="node157.html">qint</A>
+<LI><A NAME="tex2html1455"
+  HREF="node158.html">qlin</A>
+<LI><A NAME="tex2html1456"
+  HREF="node159.html">qmsh</A>
+<LI><A NAME="tex2html1457"
+  HREF="node160.html">qnor</A>
+<LI><A NAME="tex2html1458"
+  HREF="node161.html">qpnt</A>
+<LI><A NAME="tex2html1459"
+  HREF="node162.html">qnod</A>
+<LI><A NAME="tex2html1460"
+  HREF="node163.html">qrem</A>
+<LI><A NAME="tex2html1461"
+  HREF="node164.html">qseq</A>
+<LI><A NAME="tex2html1462"
+  HREF="node165.html">qshp</A>
+<LI><A NAME="tex2html1463"
+  HREF="node166.html">qspl</A>
+<LI><A NAME="tex2html1464"
+  HREF="node167.html">qsur</A>
+<LI><A NAME="tex2html1465"
+  HREF="node168.html">qtxt</A>
+<LI><A NAME="tex2html1466"
+  HREF="node169.html">quit</A>
+<LI><A NAME="tex2html1467"
+  HREF="node170.html">read</A>
+<LI><A NAME="tex2html1468"
+  HREF="node171.html">rep</A>
+<LI><A NAME="tex2html1469"
+  HREF="node172.html">rnam</A>
+<LI><A NAME="tex2html1470"
+  HREF="node173.html">rot</A>
+<LI><A NAME="tex2html1471"
+  HREF="node174.html">save</A>
+<LI><A NAME="tex2html1472"
+  HREF="node175.html">scal</A>
+<LI><A NAME="tex2html1473"
+  HREF="node176.html">send</A>
+<LI><A NAME="tex2html1474"
+  HREF="node177.html">seqa</A>
+<LI><A NAME="tex2html1475"
+  HREF="node178.html">seqc</A>
+<LI><A NAME="tex2html1476"
+  HREF="node179.html">seql</A>
+<LI><A NAME="tex2html1477"
+  HREF="node180.html">seta</A>
+<LI><A NAME="tex2html1478"
+  HREF="node181.html">setc</A>
+<LI><A NAME="tex2html1479"
+  HREF="node182.html">sete</A>
+<LI><A NAME="tex2html1480"
+  HREF="node183.html">seti</A>
+<LI><A NAME="tex2html1481"
+  HREF="node184.html">seto</A>
+<LI><A NAME="tex2html1482"
+  HREF="node185.html">setr</A>
+<LI><A NAME="tex2html1483"
+  HREF="node186.html">shpe</A>
+<LI><A NAME="tex2html1484"
+  HREF="node187.html">split</A>
+<LI><A NAME="tex2html1485"
+  HREF="node188.html">stack</A>
+<LI><A NAME="tex2html1486"
+  HREF="node189.html">steps</A>
+<LI><A NAME="tex2html1487"
+  HREF="node190.html">surf</A>
+<LI><A NAME="tex2html1488"
+  HREF="node191.html">swep</A>
+<LI><A NAME="tex2html1489"
+  HREF="node192.html">sys</A>
+<LI><A NAME="tex2html1490"
+  HREF="node193.html">test</A>
+<LI><A NAME="tex2html1491"
+  HREF="node194.html">thrs</A>
+<LI><A NAME="tex2html1492"
+  HREF="node195.html">tra</A>
+<LI><A NAME="tex2html1493"
+  HREF="node196.html">trfm</A>
+<LI><A NAME="tex2html1494"
+  HREF="node197.html">txt</A>
+<LI><A NAME="tex2html1495"
+  HREF="node198.html">ucut</A>
+<LI><A NAME="tex2html1496"
+  HREF="node199.html">ulin</A>
+<LI><A NAME="tex2html1497"
+  HREF="node200.html">val</A>
+<LI><A NAME="tex2html1498"
+  HREF="node201.html">valu</A>
+<LI><A NAME="tex2html1499"
+  HREF="node202.html">view</A>
+<LI><A NAME="tex2html1500"
+  HREF="node203.html">volu</A>
+<LI><A NAME="tex2html1501"
+  HREF="node204.html">while</A>
+<LI><A NAME="tex2html1502"
+  HREF="node205.html">wpos</A>
+<LI><A NAME="tex2html1503"
+  HREF="node206.html">wsize</A>
+<LI><A NAME="tex2html1504"
+  HREF="node207.html">zap</A>
+<LI><A NAME="tex2html1505"
+  HREF="node208.html">zoom</A>
+</UL>
+<!--End of Table of Child-Links-->
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1360"
+  HREF="node65.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1356"
+  HREF="cgx.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1350"
+  HREF="node63.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1358"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1361"
+  HREF="node65.html">anim</A>
+<B> Up:</B> <A NAME="tex2html1357"
+  HREF="cgx.html">CalculiX USER'S MANUAL -</A>
+<B> Previous:</B> <A NAME="tex2html1351"
+  HREF="node63.html">Customization</A>
+ &nbsp; <B>  <A NAME="tex2html1359"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

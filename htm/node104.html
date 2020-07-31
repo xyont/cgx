@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2017.2 (Released Jan 23, 2017) -->
+<HTML>
+<HEAD>
+<TITLE>gsur</TITLE>
+<META NAME="description" CONTENT="gsur">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2017.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node105.html">
+<LINK REL="previous" HREF="node103.html">
+<LINK REL="up" HREF="node64.html">
+<LINK REL="next" HREF="node105.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html1984"
+  HREF="node105.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1980"
+  HREF="node64.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1974"
+  HREF="node103.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1982"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1985"
+  HREF="node105.html">gtol</A>
+<B> Up:</B> <A NAME="tex2html1981"
+  HREF="node64.html">Commands</A>
+<B> Previous:</B> <A NAME="tex2html1975"
+  HREF="node103.html">grps</A>
+ &nbsp; <B>  <A NAME="tex2html1983"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001040000000000000000"></A><A NAME="gsur"></A>
+<BR>
+gsur
+</H2>
+<PRE>
+   'gsur' &lt;name(char&lt;9)&gt;|'!' '+|-' 'BLEND|&lt;nurbs&gt;|&lt;shape&gt;' -&gt;
+          '+|-' &lt;line|lcmb&gt; '+|-' &lt;line|lcmb&gt; .. (3-5 times)
+</PRE>
+This keyword is used to define or redefine a surface in the most basic way (see also <A HREF="node167.html#qsur">qsur</A>). Each surface which is intended for a regular mesh must have three to five edges which might consist of a single line or a combined line (see <A HREF="node111.html#lcmb">lcmb</A>) to be mesh-able. However, the recommend amount of edges is four. For example,
+<BR>
+<BR>
+gsur S004 + BLEND  - L002 + L00E + L006 - L00C
+<BR>
+<BR>
+will create the surface S004 with a mathematically positive orientation indicated by the &rdquo;+&rdquo; sign after the surface name. The keyword &rdquo;BLEND&rdquo; indicates that the interior of the surface will be defined according to Coons [<A
+ HREF="node265.html#Coons">14</A>] or a NURBS surface (<A HREF="node138.html#nurs">nurs</A>) or shape (<A HREF="node186.html#shpe">shpe</A>) is referenced. It should be mentioned that only nurbs or shape related surfaces can be meshed with unstructured triangles. Use a  &rdquo;+&rdquo; or &rdquo;-&rdquo; in front of the lines or lcmbs to indicate the orientation. These signs will be corrected automatically if necessary. If the surface is intended for an unstructured mesh it is not necessary to care about the correct orientation of the lines and the number of edges is not limmited. If automatic name generation is desired, then use &rdquo;<code>!</code>&rdquo; instead of a name.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

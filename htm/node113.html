@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2017.2 (Released Jan 23, 2017) -->
+<HTML>
+<HEAD>
+<TITLE>line</TITLE>
+<META NAME="description" CONTENT="line">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2017.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node114.html">
+<LINK REL="previous" HREF="node112.html">
+<LINK REL="up" HREF="node64.html">
+<LINK REL="next" HREF="node114.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html2092"
+  HREF="node114.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2088"
+  HREF="node64.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2082"
+  HREF="node112.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2090"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2093"
+  HREF="node114.html">lnor</A>
+<B> Up:</B> <A NAME="tex2html2089"
+  HREF="node64.html">Commands</A>
+<B> Previous:</B> <A NAME="tex2html2083"
+  HREF="node112.html">length</A>
+ &nbsp; <B>  <A NAME="tex2html2091"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001049000000000000000"></A><A NAME="line"></A>
+<BR>
+line
+</H2>
+<PRE>
+   'line' &lt;name(char&lt;9)&gt;|'!' &lt;p1&gt; &lt;p2&gt; &lt;cp|seq&gt; &lt;div&gt; [&lt;bias&gt;]
+</PRE>
+This keyword is used to define or redefine a line. A line depends on points. A line can only be defined if the necessary points are already defined. Attention: The points p1 and p2 must not lie on the same location. There are three different types of lines available. The straight line
+<BR>
+<BR>
+line l1 p1 p2 4
+<BR>
+<BR>
+is defined by: its name l1 (the name could have up to 8 characters), by the points p1 and p2 and optionally by the division. The arc
+<BR>
+<BR>
+line <code>!</code> p1 p2 cp 4
+<BR>
+<BR>
+needs a center point cp. The radius changes linear from p1 to p2 if the center-point cp is excentric. The name is chosen automatically (triggered by the character <code>!</code>). The spline
+<BR>
+<BR>
+line l1 p1 p2 seq 4
+<BR>
+<BR>
+needs a so called sequential-set, seq (use the command &ldquo;<A HREF="node177.html#seqa">seqa</A>&rdquo; or &ldquo;<A HREF="node164.html#qseq">qseq</A>&rdquo; to define such a set). This set seq stores the spline points between the end-points in the right order. The spline function is described in [<A
+ HREF="node265.html#spline">16</A>]. Usually, a line is defined interactively with &ldquo;<A HREF="node158.html#qlin">qlin</A>&rdquo;. 
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
