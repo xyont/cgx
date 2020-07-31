@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2017.2 (Released Jan 23, 2017) -->
+<HTML>
+<HEAD>
+<TITLE>Remarks Concerning Duns and Isaac</TITLE>
+<META NAME="description" CONTENT="Remarks Concerning Duns and Isaac">
+<META NAME="keywords" CONTENT="cgx">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2017.2">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="cgx.css">
+
+<LINK REL="next" HREF="node252.html">
+<LINK REL="previous" HREF="node250.html">
+<LINK REL="up" HREF="node230.html">
+<LINK REL="next" HREF="node252.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html3780"
+  HREF="node252.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html3776"
+  HREF="node230.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html3770"
+  HREF="node250.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/share/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html3778"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/share/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html3781"
+  HREF="node252.html">Remarks Concerning Nastran</A>
+<B> Up:</B> <A NAME="tex2html3777"
+  HREF="node230.html">Tips and Hints</A>
+<B> Previous:</B> <A NAME="tex2html3771"
+  HREF="node250.html">Remarks Concerning dolfyn</A>
+ &nbsp; <B>  <A NAME="tex2html3779"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION0001721000000000000000"></A><A NAME="Remarks_Concerning_Duns_and_Isaac"></A>
+<BR>
+Remarks Concerning Duns and Isaac
+</H2>
+If you intent to create a 2D-mesh for the cfd-code duns or isaac you have to watch out that all surfaces are created in the same order. That means that all surfaces must be defined clockwise or counter-clockwise. For isaac they have to be clockwise if you look in z direction. The block-structure can be detected only in this case. You can check the mesh by simply mesh it with linear shell-elements and display them. All elements must be either dark or illuminated. A later &ldquo;qflp&rdquo; or &ldquo;flip&rdquo; command will not cure wrong oriented surfaces since it only changes the &ldquo;sign&rdquo; in their definition and not the basic edge sequence, which is necessary here. The results of a calculation can be opened by specifying the parameter (-duns2d -duns3d -isaac2d -isaac3d) and the filenmae without any extention(cgx -isaac2d RAE2822). See also &rdquo;<A HREF="node6.html#Program_Parameters">Program Parameters</A>&rdquo;, &rdquo;<A HREF="node123.html#mesh">mesh</A>&rdquo;, &rdquo;<A HREF="node176.html#send">send</A>&rdquo;. Watch also the airfoil-example in the distrib.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>
