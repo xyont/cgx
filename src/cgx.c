@@ -288,7 +288,7 @@ char  frameFlag={1};                   /* mit (1) oder ohne Rahmen um das Grafik
 char  captionFlag={1};                 /* mit (1) oder ohne filename im Menufenster */
 char  textFlag={1};                    /* mit (1) oder ohne text im Menufenster */
 char  commandLineFlag={0};             /* mit (1) oder ohne Kommandozeile im Menufenster */
-char  printFlag=1;                     /* printf on/off on=1 (kommando 'msg' 'on'|'off' )*/
+char  printFlag=0;                     /* printf on/off on=1 (kommando 'msg' 'on'|'off' )*/
 char  scalaFlag={1};                   /* mit (1) oder ohne scala und wertetexte */ 
 char  sequenceFlag=0;                  /* 1: play a sequence of LC */
 char  vectorFlag=0;                    /* 0: scalar plot, 1: vector plot */
